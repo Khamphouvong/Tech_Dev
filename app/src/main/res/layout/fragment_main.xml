@@ -29,13 +29,17 @@
 
         <!--Login-->
         <Button
-            android:background="@drawable/bg_button"
+            android:background="@drawable/button_green"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login" />
 
         <!--Register-->
         <TextView
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/h2"
+            android:textColor="@color/colorAccent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
