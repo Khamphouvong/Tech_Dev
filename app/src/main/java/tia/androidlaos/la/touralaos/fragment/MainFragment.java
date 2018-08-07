@@ -22,7 +22,13 @@ public class MainFragment extends Fragment {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+//                Replace Fragment
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentMainFragment, new RegisterFragment())
+                        .addToBackStack(null)
+                        .commit();
             }
         });
 
